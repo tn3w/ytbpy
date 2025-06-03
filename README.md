@@ -12,7 +12,9 @@ A fast, lightweight Python library for extracting information from YouTube witho
 ## Installation
 
 ```bash
-pip install ytpy
+git clone https://github.com/tn3w/ytpy.git
+cd ytpy
+git install -e .
 ```
 
 ## Usage

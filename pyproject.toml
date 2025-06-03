@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ytpy"
+version = "0.1.0"
+description = "A fast, lightweight Python library for extracting information from YouTube without requiring API keys"
+readme = "README.md"
+authors = [
+    {name = "TN3W", email = "tn3w@protonmail.com"}
+]
+license = {text = "Apache License 2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Multimedia :: Video",
+]
+keywords = ["youtube", "api", "scraper", "video", "playlist", "channel", "search"]
+requires-python = ">=3.6"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/tn3w/ytpy"
+Repository = "https://github.com/tn3w/ytpy"
