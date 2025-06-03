@@ -25,13 +25,26 @@ git install -e .
 from ytpy import video
 
 # Get details about a video using URL or ID
-video_info = video.get_video_info('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+video_info = video.get_video_info('https://www.youtube.com/watch?v=rZ6luwT8kuc')
 # OR
-video_info = video.get_video_info('dQw4w9WgXcQ')
+video_info = video.get_video_info('rZ6luwT8kuc')
 
 print(video_info['title'])
 print(video_info['duration'])
 print(video_info['views_count'])
+```
+
+### Using OEmbed API
+
+```python
+from ytpy import video
+
+# Get details about a video using URL or ID
+video_info = video.get_video_info_oembed('https://www.youtube.com/watch?v=rZ6luwT8kuc')
+# OR
+video_info = video.get_video_info_oembed('rZ6luwT8kuc')
+
+print(video_info['title'])
 ```
 
 ### Search YouTube
@@ -52,7 +65,7 @@ for video in results:
 from ytpy import playlist
 
 # Get all videos in a playlist
-playlist_info = playlist.get_playlist_info('https://www.youtube.com/playlist?list=PLvFYFNbi-IBFeP5ALr55MbK4EkxqdkzFT')
+playlist_info = playlist.get_playlist_info('https://www.youtube.com/playlist?list=PLOU2XLYxmsIJQPs-2nnII-n59vYoxKsmq')
 
 print(f"Playlist: {playlist_info['title']}")
 print(f"Videos: {playlist_info['video_count']}")
