@@ -1,10 +1,6 @@
-[build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "ytbpy"
-version = "0.1.0"
+version = "0.1.1"
 description = "A fast, lightweight Python library for extracting information from YouTube without requiring API keys"
 readme = "README.md"
 authors = [
@@ -36,6 +32,10 @@ Homepage = "https://github.com/tn3w/ytbpy"
 Documentation = "https://github.com/tn3w/ytbpy"
 Repository = "https://github.com/tn3w/ytbpy.git"
 Issues = "https://github.com/tn3w/ytbpy/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 packages = ["ytbpy"]

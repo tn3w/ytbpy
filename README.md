@@ -11,6 +11,14 @@ A fast, lightweight Python library for extracting information from YouTube witho
 
 ## Installation
 
+### Via pip (Recommended)
+
+```bash
+pip install ytbpy
+```
+
+### Local Installation
+
 ```bash
 git clone https://github.com/tn3w/ytbpy.git
 cd ytbpy
