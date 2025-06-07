@@ -3,25 +3,39 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ytpy"
+name = "ytbpy"
 version = "0.1.0"
 description = "A fast, lightweight Python library for extracting information from YouTube without requiring API keys"
 readme = "README.md"
 authors = [
     {name = "TN3W", email = "tn3w@protonmail.com"}
 ]
-license = {text = "Apache License 2.0"}
+license = "Apache-2.0"
+requires-python = ">=3.6"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache Software License",
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
     "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Topic :: Internet :: WWW/HTTP",
     "Topic :: Multimedia :: Video",
 ]
 keywords = ["youtube", "api", "scraper", "video", "playlist", "channel", "search"]
-requires-python = ">=3.6"
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/tn3w/ytpy"
-Repository = "https://github.com/tn3w/ytpy"
+Homepage = "https://github.com/tn3w/ytbpy"
+Documentation = "https://github.com/tn3w/ytbpy"
+Repository = "https://github.com/tn3w/ytbpy.git"
+Issues = "https://github.com/tn3w/ytbpy/issues"
+
+[tool.setuptools]
+packages = ["ytbpy"]

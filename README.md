@@ -1,4 +1,4 @@
-# ytpy
+# ytbpy
 
 A fast, lightweight Python library for extracting information from YouTube without requiring API keys or authentication.
 
@@ -12,9 +12,9 @@ A fast, lightweight Python library for extracting information from YouTube witho
 ## Installation
 
 ```bash
-git clone https://github.com/tn3w/ytpy.git
-cd ytpy
-git install -e .
+git clone https://github.com/tn3w/ytbpy.git
+cd ytbpy
+pip install -e .
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ git install -e .
 ### Get Video Information
 
 ```python
-from ytpy import video
+from ytbpy import video
 
 # Get details about a video using URL or ID
 video_info = video.get_video_info('https://www.youtube.com/watch?v=rZ6luwT8kuc')
@@ -37,7 +37,7 @@ print(video_info['views_count'])
 ### Using OEmbed API
 
 ```python
-from ytpy import video
+from ytbpy import video
 
 # Get details about a video using URL or ID
 video_info = video.get_video_info_oembed('https://www.youtube.com/watch?v=rZ6luwT8kuc')
@@ -50,7 +50,7 @@ print(video_info['title'])
 ### Search YouTube
 
 ```python
-from ytpy import search
+from ytbpy import search
 
 # Search YouTube videos
 results = search.search_youtube('python tutorial', max_results=5)
@@ -62,7 +62,7 @@ for video in results:
 ### Get Playlist Information
 
 ```python
-from ytpy import playlist
+from ytbpy import playlist
 
 # Get all videos in a playlist
 playlist_info = playlist.get_playlist_info('https://www.youtube.com/playlist?list=PLOU2XLYxmsIJQPs-2nnII-n59vYoxKsmq')
@@ -77,7 +77,7 @@ for video in playlist_info['videos']:
 ### Get Channel Information
 
 ```python
-from ytpy import channel
+from ytbpy import channel
 
 # Get channel info and recent videos
 channel_info = channel.get_channel_info('https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw')
